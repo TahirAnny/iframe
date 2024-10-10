@@ -1,4 +1,4 @@
-# Ionic 7 Angular Firebase Authentication Project
+# Ionic 7 Firebase Authentication
 
 This project is an authentication system built using **Ionic 7**, **Angular**, and **Firebase**. It includes user registration, login, password reset, and user authentication using Firebase Authentication.
 
