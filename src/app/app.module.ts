@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NgxEnvModule } from '@ngx-env/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -19,6 +20,7 @@ import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
             AngularFireAuthModule,
             AngularFireModule,
             AngularFireModule.initializeApp(environment.firebaseConfig),
+            NgxEnvModule,
 
     IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy, }],

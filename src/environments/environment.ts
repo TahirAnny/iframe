@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyBBJavSzSJL1qyWEOleNoXIHndYtwgLBN4",
-    authDomain: "iframe-2999f.firebaseapp.com",
-    projectId: "iframe-2999f",
-    storageBucket: "iframe-2999f.appspot.com",
-    messagingSenderId: "573839071962",
-    appId: "1:573839071962:web:df08925d573033bd0c23e3",
-    measurementId: "G-Q43Z0STS7M"
+    apiKey: process.env["FIREBASE_API_KEY"],
+    authDomain: process.env["FIREBASE_AUTH_DOMAIN"],
+    projectId: process.env["FIREBASE_PROJECT_ID"],
+    storageBucket: process.env["FIREBASE_STORAGE_BUCKET"],
+    messagingSenderId: process.env["FIREBASE_MESSAGING_SENDER_ID"],
+    appId: process.env["FIREBASE_APP_ID"],
+    measurementId: process.env["FIREBASE_MEASUREMENT_ID"]
   },
 };
 
